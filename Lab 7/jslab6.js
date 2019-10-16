@@ -13,7 +13,7 @@ function changeColor()
     console.log(c);
 
     console.log(c);
-    boxx[0].style.color = c;
+    boxx[0].style.backgroundColor = c;
 
 }
 
@@ -41,7 +41,7 @@ function changeSq()
     //squares is an array
     for(var i=0; i<squares.length;i++)
     {
-        squares[i].style.backgroundColor = "yellow";
+        squares[i].style.backgroundColor = "black";
         squares[i].style.borderRadius = "50px";
         squares[i].style.boxShadow = "2px 2px 2px grey";
         var x = squares[i].innerHTML;
@@ -53,7 +53,7 @@ function changeSq()
     //squares is an array
     for(var i=0; i<squares.length;i++)
     {
-        squares[i].style.backgroundColor = "yellow";
+        squares[i].style.backgroundColor = "white";
         squares[i].style.borderRadius = "50px";
         squares[i].style.boxShadow = "2px 2px 2px grey";
         var x = squares[i].innerHTML;
@@ -72,11 +72,22 @@ function changeShape()
     {
         squares[i].style.width = w;
         squares[i].style.height = w;
-    }var squares = document.getElementsByClassName("square2");
+        console.log("CShape 1 " + squares + i);
+        
+    }
+    squares = document.getElementsByClassName("square2");
 
     for(var i=0; i<squares.length;i++)
     {
         squares[i].style.width = w;
         squares[i].style.height = w;
+        console.log("CShape 2 " + squares + i);
+        
     }
+    /*for(var i=0; i<squares.length;i++)
+    {
+        squares[i].style.width = w;
+        squares[i].style.height = w;
+        console.log("CShape");
+    }*/
 }
